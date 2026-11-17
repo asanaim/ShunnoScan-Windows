@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shunno Scan for Windows — Native Rust Offline Document Scanner & OCR</title>
+  <style>
+    :root {
+      --bg: #F2F2F7;
+      --card-bg: rgba(255, 255, 255, 0.88);
+      --accent: #0A84FF;
+      --accent-hover: #0071E3;
+      --text: #1C1C1E;
+      --secondary: #8E8E93;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+    }
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      box-shadow: 0 18px 38px rgba(0, 64, 221, 0.30);
+      margin: 20px auto 28px auto;
+      background: linear-gradient(135deg, #0A84FF 0%, #0051D5 55%, #002B7F 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-icon svg {
+      width: 88px;
+      height: 88px;
+    }
+    h1 {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      font-size: 18px;
+      color: var(--secondary);
+      line-height: 1.45;
+      margin-bottom: 32px;
+    }
+    .download-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 32px 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      border: 1px solid rgba(255,255,255,0.7);
+      margin-bottom: 32px;
+    }
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 16px 36px;
+      border-radius: 980px;
+      box-shadow: 0 6px 18px rgba(10, 132, 255, 0.35);
+      transition: all 0.2s ease;
+      margin-bottom: 14px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .btn-download:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+    .file-meta {
+      font-size: 13px;
+      color: var(--secondary);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="app-icon">
+      <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 38V31C26 28.2 28.2 26 31 26H38M70 26H77C79.8 26 82 28.2 82 31V38M82 70V77C82 79.8 79.8 82 77 82H70M38 82H31C28.2 82 26 79.8 26 77V70" stroke="rgba(255,255,255,0.7)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M54 30C63.9 30 71 39.5 71 54C71 68.5 63.9 78 54 78C44.1 78 37 68.5 37 54C37 39.5 44.1 30 54 30Z" fill="rgba(255,255,255,0.14)"/>
+        <path d="M54 30C63.9 30 71 39.5 71 54C71 68.5 63.9 78 54 78C44.1 78 37 68.5 37 54C37 39.5 44.1 30 54 30Z" stroke="#FFFFFF" stroke-width="6.0" stroke-linecap="round"/>
+        <path d="M23 56H85" stroke="#30D158" stroke-width="3.6" stroke-linecap="round"/>
+        <circle cx="54" cy="56" r="2.6" fill="#30D158"/>
+      </svg>
+    </div>
+
+    <h1>Shunno Scan for Windows</h1>
+    <p class="subtitle">Native Rust (~6 MB), zero-cloud offline document scanner, searchable PDF maker, and multi-script OCR for Windows 10 & 11.</p>
+
+    <div class="download-card">
+      <a href="https://github.com/asanaim/ShunnoScan-Windows/releases/latest/download/ShunnoScan.exe" class="btn-download">
+        Download ShunnoScan.exe
+      </a>
+      <div class="file-meta">Version 1.0 • Native Rust x86_64 • Windows 10 / 11 • Zero Runtime Required</div>
+    </div>
+  </div>
+</body>
+</html>
